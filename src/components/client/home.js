@@ -18,7 +18,7 @@ const Home = ()  => {
 
     useEffect(()=>{
 
-        axios.get(`http://localhost:5000/seller/product/productget`)
+        axios.get(`https://marketplacebreif.herokuapp.com/seller/product/productget`)
           .then(function (response) {
       
             setProducts(response.data)

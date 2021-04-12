@@ -29,7 +29,7 @@ const Seller_signup = () => {
 
 const Seller = {firstName,lastName,phone,email,login,password,identité_fiscale};
 
-axios.post(`http://localhost:5000/seller/signup`,Seller)
+axios.post(`https://marketplacebreif.herokuapp.com/seller/signup`,Seller)
 
     .then(res => {
         if(res.error){

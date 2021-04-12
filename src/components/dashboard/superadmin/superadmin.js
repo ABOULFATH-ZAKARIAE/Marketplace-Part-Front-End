@@ -18,7 +18,7 @@ const Admin = () => {
     useEffect(()=>{
 
 
-        axios.get(`http://localhost:5000/`)
+        axios.get(`https://marketplacebreif.herokuapp.com/`)
           .then(function (response) {
     
             setAdmins(response.data)
@@ -29,7 +29,7 @@ const Admin = () => {
     
         })
         useEffect(()=>{
-        axios.get(`http://localhost:5000/getsuperadmin`)
+        axios.get(`https://marketplacebreif.herokuapp.com/getsuperadmin`)
         .then(function (response) {
   
             setSuperAdmin(response.data)

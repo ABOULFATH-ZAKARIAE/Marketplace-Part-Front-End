@@ -15,7 +15,7 @@ const Login = () => {
 
 	const user = {login,password};
 
-	axios.post(`http://localhost:5000/login`, user)
+	axios.post(`https://marketplacebreif.herokuapp.com/login`, user)
 		.then(res => {
 			console.log(res)
 			if(!res.data.message){ 
@@ -24,7 +24,7 @@ const Login = () => {
 			 if(res.data.role === 'SUPERADMIN'){
 				 history.push('superadmin-dashboard')
 			 }else{
-				history.push('addAdmin');
+				history.push('Admin-dashboard');
 			 }
 
 			 toastr.info('User is authenticated SuccessFully', `Welcome ${user.login}`, {

@@ -20,7 +20,7 @@ const SellerActivation = () => {
 // ---------------------get Admin to update-----------------------------
 useEffect(()=>{
 
-  axios.get(`http://localhost:5000/seller/getseller/${id_seller}`)
+  axios.get(`https://marketplacebreif.herokuapp.com/seller/getseller/${id_seller}`)
   .then(function (response) {
 
     // setType(response.data.type)
@@ -40,7 +40,7 @@ const handleSubmit = (e) => {
 var id = idSeller.value;
 const data = {status:id};
 
-axios.put(`http://localhost:5000/seller/update/${id_seller}`, data)
+axios.put(`https://marketplacebreif.herokuapp.com/seller/update/${id_seller}`, data)
 .then(res => {
   if(res.error){
     return false

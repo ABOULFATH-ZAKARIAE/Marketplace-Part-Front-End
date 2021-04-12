@@ -29,7 +29,7 @@ const AddProduct = () => {
 
 const product = {title,description,image,price,category,quantity};
 
-axios.post(`http://localhost:5000/seller/product/productadd`,product)
+axios.post(`https://marketplacebreif.herokuapp.com/seller/product/productadd`,product)
 
     .then(res => {
         if(res.error){

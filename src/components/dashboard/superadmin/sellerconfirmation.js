@@ -16,7 +16,7 @@ const history = useHistory();
 useEffect(()=>{
 
 
-  axios.get(`http://localhost:5000/seller`)
+  axios.get(`https://marketplacebreif.herokuapp.com/seller`)
     .then(function (response) {
 
       setVendeur(response.data)
@@ -28,7 +28,7 @@ useEffect(()=>{
   })
 
   useEffect(()=>{
-    axios.get(`http://localhost:5000/getsuperadmin`)
+    axios.get(`https://marketplacebreif.herokuapp.com/getsuperadmin`)
     .then(function (response) {
 
         setSuperAdmin(response.data)

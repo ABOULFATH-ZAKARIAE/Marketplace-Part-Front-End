@@ -11,7 +11,7 @@ import axios from 'axios';
 const Addadmin = () => {
     const [superAdmin, setSuperAdmin] = useState();
     useEffect(()=>{
-        axios.get(`http://localhost:5000/getsuperadmin`)
+        axios.get(`https://marketplacebreif.herokuapp.com/getsuperadmin`)
         .then(function (response) {
   
             setSuperAdmin(response.data)
@@ -41,7 +41,7 @@ const Addadmin = () => {
 
 const Admin = {firstName,lastName,phone,email,login,password,role};
 
-axios.post(`http://localhost:5000/signup`,Admin)
+axios.post(`https://marketplacebreif.herokuapp.com/signup`,Admin)
 
     .then(res => {
         if(res.error){

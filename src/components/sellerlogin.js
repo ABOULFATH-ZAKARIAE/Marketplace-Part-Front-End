@@ -15,7 +15,7 @@ const SellerLogin = () => {
 
 	const vendeur = {login,password}
 
-    axios.post(`http://localhost:5000/seller/login`, vendeur)
+    axios.post(`https://marketplacebreif.herokuapp.com/seller/login`, vendeur)
 		.then(res => {
 			console.log(res)
 			if(!res.data.message){

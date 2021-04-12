@@ -12,7 +12,7 @@ const ADDCARD = () => {
     
     useEffect(()=>{
 
-        axios.get(`http://localhost:5000/seller/product/getProductById/${idPdt}`)
+        axios.get(`https://marketplacebreif.herokuapp.com/seller/product/getProductById/${idPdt}`)
           .then(function (response) {
       
             setProducts(response.data)
